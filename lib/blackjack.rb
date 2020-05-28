@@ -69,7 +69,7 @@ def runner
   # code runner here
   welcome
   initial_round
-    until initial_round > 21
+    if initial_round <= 21
       sum = hit?(initial_round)
       display_card_total(sum)
     end
